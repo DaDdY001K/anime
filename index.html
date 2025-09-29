@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANimeKs - Watch Anime Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"><i class="fas fa-play-circle"></i>ANimeKs</div>
+    <nav class="nav-tabs">
+      <a href="#" class="nav-tab active">Movies</a>
+      <a href="#" class="nav-tab">Series</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Type to search..." />
+      <div class="user-actions">
+        <i class="fas fa-cog" style="cursor: pointer"></i>
+        <i class="fas fa-user-circle" style="cursor: pointer; color: rgb(169, 41, 41)"></i>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Menu</h3>
+        <a href="#" class="sidebar-item active">
+          <i class="fas fa-home"></i> Home
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-users"></i> Community
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-calendar"></i> Events
+        </a>
+      </div><!-- sidebar-section lukket korrekt -->
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Categories</h3>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-film"></i> Movies
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-clock"></i> Recent
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-download"></i> Downloaded
+        </a>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">General</h3>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-cog"></i> Settings
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-sign-in"></i> Sign in
+        </a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="hero-section">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1 class="hero-title">ONE PUNCH MAN</h1>
+            <p class="hero-description">A hilarious action-comedy about a young man named Saitama who can defeat any
+              enemy with just one punch. Follow his journey as he search for worthy opponents while dealing with the
+              mundane problem of everyday superhero life.</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary"><i class="fas fa-play"></i> Story</a>
+              <a href="#" class="btn btn-secondary"><i class="fas fa-users"></i> Actors</a>
+            </div>
+          </div>
+        </div>
+        <div class="play-button"><i class="fas fa-play"></i></div>
+      </div>
+      <section class="section">
+        <h2 class="section-title">Top Rated Anime</h2>
+        <div class="anime-grid" id="animeGrid">
+          <!-- Anime cards will be loaded via API -->
+        </div>
+      </section>
+    </main>
+
+    <div class="sidebar-right">
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Popular Anime</h3>
+        <div class="popular-item">
+          <div class="popular-poster"
+            style="background-image: url('https://th.bing.com/th/id/R.1aa6aef70d6fa47d0e3cbc366313d074?rik=Pi5pMtvBFDX%2bdw&riu=http%3a%2f%2fctrlgeekgirl.files.wordpress.com%2f2013%2f11%2fattackontitan-1.jpg&ehk=blVHthF5d6rE8lJCM1Kh%2bgG5ZbAoddey1TNMWPW2%2fIo%3d&risl=&pid=ImgRaw&r=0');">
+          </div>
+          <div class="popular-info">
+            <h4>Attack on Titan</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+        <div class="popular-item">
+          <div class="popular-poster"
+            style="background-image: url('https://m.media-amazon.com/images/I/71uT+Js3kCS._AC_SL1024_.jpg');"></div>
+          <div class="popular-info">
+            <h4>Haikyuu</h4>
+            <p>4 Seasons</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Watchlist</h3>
+        <div class="popular-item">
+          <div class="popular-poster"
+            style="background-image: url('https://images.justwatch.com/poster/261483319/s718/my-hero-academia.jpg');">
+          </div>
+          <div class="popular-info">
+            <h4>My Hero Academia</h4>
+            <p>Resumed Episode - 6</p>
+          </div>
+        </div>
+        <div class="popular-item">
+          <div class="popular-poster"
+            style="background-image: url('https://images.justwatch.com/poster/255401520/s718/bleach.jpg');"></div>
+          <div class="popular-info">
+            <h4>Bleach</h4>
+            <p>Episode 120</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
