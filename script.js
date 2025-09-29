@@ -56,7 +56,4 @@ document.querySelector('.play-button').addEventListener('click', () => {
   alert('Playing One Punch Man!')
 })
 
-
-
-
 loadAnime();
