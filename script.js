@@ -56,10 +56,6 @@ document.querySelector('.play-button').addEventListener('click', () => {
   alert('Playing One Punch Man!')
 })
 
-      item.addEventListener('click', () => {
-        const item = item.querySelector('.popular-item').textContent;
-        alert(`Åbner ${item}...`);
-      });
 
 
 
